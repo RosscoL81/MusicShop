@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31d9b717-f037-4c25-82a9-4294f57a9f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instruments/FamilyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/instruments/Trumpet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/instrumentsTests/PianoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Accessory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/SheetMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AccessoriesTests/SheetMusicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instruments/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instruments/Guitar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instruments/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instruments/Instrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/instruments/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/instruments/Piano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/instrumentsTests/GuitarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/instrumentsTests/GuitarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/instrumentsTests/KeyboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/instrumentsTests/TrumpetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/instruments/Guitar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/instruments/Guitar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/instruments/Instrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/instruments/Instrument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GuitarTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.instrumentsTests in MusicShop">
+  <component name="RunManager" selected="JUnit.SheetMusicTest">
     <configuration name="All in MusicShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicShop" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,6 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SheetMusicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AccessoriesTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AccessoriesTests" />
+      <option name="MAIN_CLASS_NAME" value="AccessoriesTests.SheetMusicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="instrumentsTests in MusicShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicShop" />
       <extension name="coverage">
@@ -100,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SheetMusicTest" />
         <item itemvalue="JUnit.instrumentsTests in MusicShop" />
         <item itemvalue="JUnit.All in MusicShop" />
         <item itemvalue="JUnit.PianoTest" />
