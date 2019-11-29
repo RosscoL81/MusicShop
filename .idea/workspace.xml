@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31d9b717-f037-4c25-82a9-4294f57a9f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Accessory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/SheetMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AccessoriesTests/SheetMusicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/DrumSticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AccessoriesTests/DrumSticksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SheetMusicTest">
+  <component name="RunManager" selected="JUnit.All in MusicShop">
     <configuration name="All in MusicShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicShop" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in MusicShop" />
         <item itemvalue="JUnit.SheetMusicTest" />
         <item itemvalue="JUnit.instrumentsTests in MusicShop" />
-        <item itemvalue="JUnit.All in MusicShop" />
         <item itemvalue="JUnit.PianoTest" />
         <item itemvalue="JUnit.GuitarTest" />
       </list>
