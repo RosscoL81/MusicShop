@@ -1,6 +1,8 @@
 package instrumentsTests;
 
+import instruments.FamilyType;
 import instruments.Guitar;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,12 +14,12 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar("String", "Wood", 100.00, 120.00, 6);
+        guitar = new Guitar(FamilyType.STRING, "Wood", 100.00, 120.00, 6, "acoustic");
     }
 
     @Test
-    public void hasType(){
-        assertEquals("String", guitar.getType());
+    public void hasFamilyType(){
+        assertEquals(FamilyType.STRING, guitar.getFamilyType());
     }
 
     @Test
@@ -27,12 +29,12 @@ public class GuitarTest {
 
     @Test
     public void hasBuyPrice(){
-        assertEquals(50.00, guitar.getBuyPrice(), 0.01);
+        assertEquals(100.00, guitar.getBuyPrice(), 0.01);
     }
 
     @Test
     public void hasSellPrice(){
-        assertEquals(60.00, guitar.getSellPrice(), 0.01);
+        assertEquals(120.00, guitar.getSellPrice(), 0.01);
     }
 
     @Test
@@ -42,7 +44,7 @@ public class GuitarTest {
 
     @Test
     public void hasMarkUp(){
-        assertEquals(10.00, guitar.calculateMarkUp(), 0.01);
+        assertEquals(20.00, guitar.calculateMarkUp(), 0.01);
     }
 
     @Test
@@ -50,4 +52,8 @@ public class GuitarTest {
         assertEquals(6, guitar.getNumberOfStrings(), 0.01);
     }
 
+    @Test
+    public void hasType(){
+        assertEquals("acoustic", guitar.getType());
+    }
 }

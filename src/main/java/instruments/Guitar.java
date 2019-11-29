@@ -1,14 +1,15 @@
 package instruments;
 
-import behaviours.IPlay;
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument {
 
     private int numberOfStrings;
+    private String type;
 
-    public Guitar(String type, String material, double buyPrice, double sellPrice, int numberOfStrings){
-        super(type, material, buyPrice, sellPrice);
+    public Guitar(FamilyType familyType, String material, double buyPrice, double sellPrice, int numberOfStrings, String type){
+        super(familyType, material, buyPrice, sellPrice);
         this.numberOfStrings = numberOfStrings;
+        this.type = type;
     }
 
     public int getNumberOfStrings() {
@@ -20,4 +21,7 @@ public class Guitar extends Instrument implements IPlay {
     }
 
 
+    public String getType() {
+        return type;
+    }
 }

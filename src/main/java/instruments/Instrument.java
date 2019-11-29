@@ -1,23 +1,24 @@
 package instruments;
 
 
+import behaviours.IPlay;
 import behaviours.ISell;
 
-public abstract class Instrument implements ISell {
-    private String type;
+public abstract class Instrument implements ISell, IPlay {
+    private FamilyType familyType;
     private String material;
     private double buyPrice;
     private double sellPrice;
 
-    public Instrument(String type, String material, double buyPrice, double sellPrice){
-        this.type = type;
+    public Instrument(FamilyType familyType, String material, double buyPrice, double sellPrice){
+        this.familyType = familyType;
         this.material = material;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
     }
 
-    public String getType() {
-        return this.type;
+    public FamilyType getFamilyType() {
+        return this.familyType;
     }
 
     public String getMaterial() {
