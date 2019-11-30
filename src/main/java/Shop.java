@@ -41,4 +41,16 @@ public class Shop {
         }
         return profit;
     }
+
+//    public double discountForStudents(Customer customer, ISell item){
+//        if (customer.getEmploymentStatus() == "student"){
+//            item.getSellPrice()*0.8
+//        }
+//    }
+
+    public void sellToCustomer(ISell item, Customer customer){
+        this.stock.remove(item);
+        this.till += item.getSellPrice();
+        customer.makePurchase(item);
+    }
 }

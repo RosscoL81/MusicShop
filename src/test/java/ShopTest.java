@@ -15,6 +15,7 @@ public class ShopTest {
     ISell sheetMusic;
     ISell drumSticks;
     ISell guitar2;
+    Customer customer;
 
     @Before
     public void before(){
@@ -23,6 +24,7 @@ public class ShopTest {
         sheetMusic = new SheetMusic("Stereophonics Sheet Music", 5.00, 7.99);
         drumSticks = new DrumSticks("Hickory", 0.99, 3.99);
         guitar2 = new Guitar(FamilyType.STRING, "wood", 150.00, 225.00, 6, "acoustic");
+        customer = new Customer("student", 130);
 
     }
 
@@ -57,6 +59,17 @@ public class ShopTest {
         shop.addStock(drumSticks);
         shop.addStock(guitar2);
         assertEquals(100.99, shop.getPotentialProfit(), 0.01);
+
+    }
+
+    @Test
+    public void sellToCustomer(){
+        shop.addStock(guitar);
+        shop.sellToCustomer(guitar, customer);
+        assertEquals(0, shop.getStockCount());
+        assertEquals(1120, shop.getTill(), 0.01);
+        assertEquals(1, customer.numberOfPurchases());
+        assertEquals(10.00, customer.getWallet(), 0.01);
 
     }
 }
